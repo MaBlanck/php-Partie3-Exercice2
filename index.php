@@ -1,7 +1,7 @@
 <?php
-    $startNumber = 0;
-    $randomNumber = 57;
-    ?>
+$startNumber = 0;
+$randomNumber = 57;
+?>
 
 
 <!DOCTYPE html>
@@ -16,15 +16,15 @@
 <body>
     <h1>Exercice 2 Partie 3</h1>
 
-    <p><?php 
-    while($startNumber < 20)
-    {
-        $result = $startNumber * $randomNumber;
-        echo $result;
-        $startNumber++;
-        
-    }
-    ?></p>
+    <ul>
+        <?php
+        while ($startNumber < 20) {
+            $result = $startNumber * $randomNumber;
+            echo '<li>' . $result . '</li>';
+            $startNumber++;
+        }
+        ?>
+    </ul>
 </body>
 
 </html>
