@@ -1,6 +1,6 @@
 <?php
-$startNumber = 0;
-$randomNumber = 57;
+$firstNumber = 0;
+$secondNumber = 57;
 ?>
 
 
@@ -18,10 +18,12 @@ $randomNumber = 57;
 
     <ul>
         <?php
-        while ($startNumber < 20) {
-            $result = $startNumber * $randomNumber;
-            echo '<li>' . $result . '</li>';
-            $startNumber++;
+        while ($firstNumber <= 20) {
+            $result = $firstNumber * $secondNumber;
+        ?>
+            <li><?= $result; ?></li>
+        <?php
+            $firstNumber++;
         }
         ?>
     </ul>
